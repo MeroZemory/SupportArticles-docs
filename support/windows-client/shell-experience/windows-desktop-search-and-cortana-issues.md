@@ -59,12 +59,12 @@ Windows Desktop Search shows no results if you have your **Internet Options** se
 
 When you try to search from the **Start**  menu or from Cortana on a Windows 10-based computer, you receive no results. This behavior occurs if you have your **Internet Options**  settings configured to disable local caches and databases.
 
-You can disable local caches and databases by using one of the following methods:
+You can enable local caches and databases by using one of the following methods:
 
 - Using Internet Explorer:
- **Internet Options** -> **General** tab -> **Browsing History** -> **Settings** -> **Website Data Settings** -> **Caches and databases** tab -> **Allow website caches and databases** (clearing the check box)
+ **Internet Options** -> **General** tab -> **Browsing History** -> **Settings** -> **Website Data Settings** -> **Caches and databases** tab -> **Allow website caches and databases** (checking the check box)
 - Using Registry Editor:  
-`HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\BrowserStorage\AppCache` "AllowWebsiteCaches"=dword:00000000
+`HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\BrowserStorage\AppCache` "AllowWebsiteCaches"=dword:00000001
 - Using Group Policy:  
 Group Policy under either or both User and Computer configuration:
 
